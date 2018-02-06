@@ -47,6 +47,9 @@ body {
 }
 
 .img {
+    display: inline-block;
+    width: 360px;
+    height: 281px;
     margin-right: 19px;
     vertical-align: top;
 }
