@@ -47,23 +47,19 @@ body {
 }
 
 .img {
-    display: inline-block;
-    width: 360px;
-    height: 281px;
+    float: left;
     margin-right: 19px;
     vertical-align: top;
-}
-
-.title2-p {
-    display: inline-block;
-    width: calc(100% - 383px);
-    margin-bottom: 9px;
 }
 
 .title2 {
     margin-bottom: 14px;
     font-size: 15px;
     color: #263555;
+}
+
+.p-article {
+    margin-bottom: 9px;
 }
 
 
