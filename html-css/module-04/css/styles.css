@@ -1,0 +1,209 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+body {
+    background-image: url(../img/page-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 41px 0px 65px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    line-height: 19px;
+    color: #4e5050;
+}
+
+.wrapper {
+    width: 1024px;
+    margin: auto;
+    padding: 117px 61px 88px;
+    background-color: #fff; 
+}
+
+
+/* ARTICLE-LIST */
+.article-list {
+    margin-bottom: 50px;
+}
+
+
+/* article */
+.article {
+    display: inline-block;
+    width: 693px;
+    margin-right: -4px;
+    padding-right: 51px;
+}
+
+.title {
+    margin-bottom: 48px;
+    font-family: 'Pathway Gothic One';
+    font-size: 32px;
+    color: #263555;
+}
+
+.img {
+    margin-right: 19px;
+    vertical-align: top;
+}
+
+.title2-p {
+    display: inline-block;
+    width: calc(100% - 383px);
+    margin-bottom: 9px;
+}
+
+.title2 {
+    margin-bottom: 14px;
+    font-size: 15px;
+    color: #263555;
+}
+
+
+/* list */
+.list {
+    display: inline-block;
+    width: calc(100% - 693px);
+    vertical-align: top;
+    counter-reset: list;
+}
+
+
+.li:before {
+    display: inline-block;
+    width: 26px;
+    height: 28px;
+    margin-right: 7px;
+    border-radius: 13px;
+    background-color: #38afe5;
+    counter-increment: list;
+    content: counter(list);
+    vertical-align: top;
+    text-align: center;
+    line-height: 28px;
+    color: #fff;
+}
+
+.box-li {
+    display: inline-block;
+    margin-bottom: 19px;
+    width: calc(100% - 37px);
+}
+
+
+.box-li3 {
+    display: inline-block;
+    width: calc(100% - 37px);   
+}
+
+
+
+/* OFFER TESTIMONIAL */
+.offer-testimonial {
+    border-top: #dedbdb solid 1px;
+    padding-top: 58px;
+}
+
+
+/* offer */
+.offer {
+    display: inline-block;
+    width: 693px;
+    margin-right: -4px;
+    padding-right: 51px;
+}
+
+.offer-title {
+    margin-bottom: 66px;
+    font-family: 'Pathway Gothic One';
+    font-size: 32px;
+    color: #263555;
+}
+
+.offer-title2 {
+    margin-bottom: 25px;
+    font-size: 15px;
+    color: #263555;
+}
+
+.offer-p {
+    margin-bottom: 31px;
+}
+
+.offer-list {
+    display: inline-block;
+    margin-right: 39px;
+    vertical-align: top;
+}
+
+.offer-list:last-child {
+    margin-right: 0px;
+}
+
+.offer-li {
+    margin-bottom: 27px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #263555;
+}
+
+.offer-li:last-child {
+    margin-bottom: 0px;
+}
+
+.offer-li:before {
+    content: "\2192";
+    margin-right: 14px;
+    color: #38afe5;
+}
+
+
+/* testimonial */
+.testimonial {
+    display: inline-block;
+    width: calc(100% - 693px);
+    vertical-align: top;
+}
+
+.title-testimonial {
+    margin-bottom: 23px;
+    font-family: 'Pathway Gothic One';
+    font-size: 32px;
+    color: #263555;
+}
+
+.p-testimonial {
+    margin-bottom: 31px;
+    padding: 23px 21px 23px 23px;
+    background-color: #fcfafa;
+    border: 1px inset #dedbdb;
+    border-radius: 3px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #263555;
+}
+
+.p-testimonial:before {
+    content: "\201c";
+    margin-right: 3px;
+}
+
+.p-testimonial:after {
+    content: "\201d";
+}
+
+.title2-testimonial {
+    margin-bottom: 20px; 
+    font-size: 15px;
+    font-weight: bold;
+    color: #263555;
+    text-align: center;
+}
+
+.p2-testimonial {
+    text-align: center;
+}
