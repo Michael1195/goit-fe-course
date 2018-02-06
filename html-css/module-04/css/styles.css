@@ -48,6 +48,8 @@ body {
 
 .img {
     float: left;
+    width: 360px;
+    height: 281px;
     margin-right: 19px;
     vertical-align: top;
 }
