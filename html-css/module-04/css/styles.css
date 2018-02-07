@@ -43,6 +43,7 @@ body {
     margin-bottom: 48px;
     font-family: 'Pathway Gothic One';
     font-size: 32px;
+    font-weight: normal;
     color: #263555;
 }
 
@@ -51,12 +52,12 @@ body {
     width: 360px;
     height: 281px;
     margin-right: 19px;
-    
 }
 
 .title2 {
     margin-bottom: 14px;
     font-size: 15px;
+    font-weight: normal;
     color: #263555;
 }
 
@@ -122,12 +123,14 @@ body {
     margin-bottom: 66px;
     font-family: 'Pathway Gothic One';
     font-size: 32px;
+    font-weight: normal;
     color: #263555;
 }
 
 .offer-title2 {
     margin-bottom: 25px;
     font-size: 15px;
+    font-weight: normal;
     color: #263555;
 }
 
@@ -148,7 +151,7 @@ body {
 .offer-li {
     margin-bottom: 27px;
     font-size: 15px;
-    font-weight: bold;
+    font-weight: normal;
     color: #263555;
 }
 
@@ -174,33 +177,34 @@ body {
     margin-bottom: 23px;
     font-family: 'Pathway Gothic One';
     font-size: 32px;
+    font-weight: normal;
     color: #263555;
 }
 
-.p-testimonial {
+.title2-testimonial {
     margin-bottom: 31px;
-    padding: 23px 21px 23px 23px;
+    padding: 23px 20px 23px;
     background-color: #fcfafa;
-    border: 1px inset #dedbdb;
+    border: 1px solid #dedbdb;
     border-radius: 3px;
     font-size: 15px;
-    font-weight: bold;
+    font-weight: normal;
     color: #263555;
 }
 
-.p-testimonial:before {
+.title2-testimonial:before {
     content: "\201c";
     margin-right: 3px;
 }
 
-.p-testimonial:after {
+.title2-testimonial:after {
     content: "\201d";
 }
 
-.title2-testimonial {
+.title3-testimonial {
     margin-bottom: 20px; 
     font-size: 15px;
-    font-weight: bold;
+    font-weight: normal;
     color: #263555;
     text-align: center;
 }
