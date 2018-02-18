@@ -7,20 +7,16 @@
 
 .wrapper {
     min-height: 100vh;
-    width: 1600px;
+    max-width: 1600px;
     margin: auto;
 }
 
 /* HEADER */
-.page-header {
-    padding: 0px 245px;
-    background-color: #fff;
-}
-
 .nav {
     position: relative;
-    width: 1110px;
+    max-width: 1110px;
     padding: 38px 0px 32px 0px;
+    margin: auto;
 }
 
 .logo {
@@ -43,6 +39,7 @@
     display: inline-block;
     right: 0px;
     bottom: 38px;
+    margin-left: 80px;
     font-size: 0px;
 }
 
@@ -75,20 +72,32 @@
 /* SLIDER */
 .slider {
     position: relative;
-    height: 600px;
-    background-color: #323232; 
-    background-image: linear-gradient( rgba(0, 0, 0, .52) 100%, rgba(40, 29, 94, .85) 0%), url(../img/slide1.png);
-    background-size: cover;
+    background-color: #323232;
 }
 
-.text {
-    display: inline-block;
-    width: 754px;
+.slide {
+    max-width: 100%;
+}
+
+.slider-bg {
     position: absolute;
-    top: 220px;
-    left: 430px;
+    top: 0px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .52);
+}
+
+.title-button {
+    padding-top: 14%;
+}
+
+.slide-title {
+    margin: auto;
+    max-width: 754px;
+    position: relative;
     font-family: 'Roboto', sans-serif;
-    font-size: 60px;
+    font-size: 3.75rem;
     font-weight: 900;
     text-transform: uppercase;
     color: #fff;
@@ -99,11 +108,11 @@
     font-weight: 300;
 }
 
-.slider:before {
+.slide-title:before {
     content: '';
     position: absolute;
-    left: 245px;
-    top: 225px;
+    left: -178px;
+    top: 30px;
     display: inline-block;
     width: 104px;
     height: 104px;
@@ -113,14 +122,14 @@
     background-position: center;
 }
 
-.slider:after {
+.slide-title:after {
     content: '';
     background-image: url(../img/arrow1.png);
     background-repeat: no-repeat;
     background-position: center;
     position: absolute;
-    right: 245px;
-    top: 225px;
+    right: -178px;
+    top: 30px;
     display: inline-block;
     width: 104px;
     height: 104px;
@@ -130,8 +139,9 @@
 
 /* COLLECTION */
 .collection {
+    max-width: 100%;
     position: relative;
-    padding: 102px 245px 100px;
+    padding: 102px 0px 90px 0px;
     background-color: #e9f0fd;
 }
 
@@ -150,20 +160,24 @@
     margin-bottom: 80px;
 }
 
+.figure-foto1 {
+    text-align: center;
+    
+}
+
 .figure-foto {
     position: relative;
     display: inline-block;
-    padding: 0px 15px;
-    margin-right: -4px;
+    margin: 0px 13px 10px;
 }
 
 
 .figure-foto:last-of-type {
-    padding-right: 0px;
+    margin-right: 0px;
 }
 
 .figure-foto:first-of-type {
-    padding-left: 0px;
+    margin-left: 0px;
 }
 
 .text-fg {
@@ -176,6 +190,7 @@
     font-size: 18px;
     font-weight: 900;
     text-transform: uppercase;
+    text-align: left;
     color: #fff;
 }
 
@@ -194,7 +209,6 @@
 
 .figure-foto:hover .number {
     background-color: #7fd9c7;
-
 }
 
 
@@ -206,7 +220,6 @@
     display: none;
     margin: 11px 10px;
     top: 0px;
-
 } 
 
 .figure-foto:hover > .collection-hover {
@@ -225,10 +238,22 @@
     display: inline-block;
     width: 48px;
     height: 48px;
-    vertical-align: top;
-    text-align: center;
-    line-height: 61px;
     margin-right: 6px;
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+
+.red {
+    background-image: url(../img/ico2.png);
+   
+}
+
+.flo {
+    background-image: url(../img/ico3.png);
+}
+
+.end {
+    background-image: url(../img/ico4.png);
 }
 
 .icon:nth-last-child(2) {
@@ -242,11 +267,11 @@
 
 
  .cart {
+    background-image: url(../img/ico1.png);
     background-color: #323232;
     display: inline-block;
     margin-top: 7px;
     border-right: 0px;
-    
 }
 
 .icon-ct:hover > .cart {
@@ -264,6 +289,7 @@
     vertical-align: top;
     text-align: center;
     text-transform: uppercase;
+    text-decoration: none;
     line-height: 48px;
     margin-top: 7px;
     background-color: #323232;
@@ -283,7 +309,6 @@
 
 /* FOOTER */
 footer {
-    height: 88px;
     background-color: #323232;
     text-align: center;
     line-height: 88px;
@@ -296,4 +321,3 @@ footer {
 footer span {
     color: #46bfa9;
 }
-
