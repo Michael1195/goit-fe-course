@@ -7,12 +7,12 @@
 
 .wrapper {
     min-height: 100vh;
-    max-width: 1600px;
+    min-width: 100vh;
     margin: auto;
 }
 
 /* HEADER */
-.nav {
+.header {
     position: relative;
     max-width: 1110px;
     padding: 38px 0px 32px 0px;
@@ -71,12 +71,17 @@
 
 /* SLIDER */
 .slider {
+    display: block;
+    width: 100%;
     position: relative;
     background-color: #323232;
 }
 
-.slide {
-    max-width: 100%;
+
+.slide { 
+    width: 100%;
+    min-height: 100%;
+
 }
 
 .slider-bg {
@@ -90,12 +95,14 @@
 
 .title-button {
     padding-top: 14%;
+    margin: auto;
+    max-width: 1140px;
+    position: relative;
 }
 
 .slide-title {
     margin: auto;
     max-width: 754px;
-    position: relative;
     font-family: 'Roboto', sans-serif;
     font-size: 3.75rem;
     font-weight: 900;
@@ -108,32 +115,34 @@
     font-weight: 300;
 }
 
-.slide-title:before {
-    content: '';
+
+.arrow1 {
     position: absolute;
-    left: -178px;
-    top: 30px;
+    bottom: 10px;
     display: inline-block;
     width: 104px;
     height: 104px;
-    background: rgba(26, 188, 156, .65);
+    background-color: #1abc9c;
     background-image: url(../img/arrow2.png);
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.slide-title:after {
-    content: '';
+.arrow2 {
     background-image: url(../img/arrow1.png);
     background-repeat: no-repeat;
     background-position: center;
     position: absolute;
-    right: -178px;
-    top: 30px;
+    right: 0px;
+    bottom: 10px;
     display: inline-block;
     width: 104px;
     height: 104px;
     background-color: #1abc9c;
+}
+
+.arrow1:hover, .arrow2:hover {
+    background-color: rgba(26, 188, 156, .65); 
 }
 
 
@@ -145,6 +154,8 @@
     background-color: #e9f0fd;
 }
 
+
+
 .title {
     font-family: 'Roboto', sans-serif;
     font-size: 48px;
@@ -154,16 +165,20 @@
     margin-bottom: 31px;
 }
 
-.rectangle {
+.figure-foto1 {
+    text-align: center;
+}
+
+.figure-foto1::before{
+    content: '';
+    background-image: url(../img/rectangle.png);
     display:  block;
+    width: 164px;
+    height: 7px;
     margin: auto;
     margin-bottom: 80px;
 }
 
-.figure-foto1 {
-    text-align: center;
-    
-}
 
 .figure-foto {
     position: relative;
@@ -318,6 +333,7 @@ footer {
     color: #fefefe;
 }
 
-footer span {
+footer a {
+    text-decoration: none;
     color: #46bfa9;
 }
