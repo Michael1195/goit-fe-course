@@ -34,17 +34,14 @@
 }
 
 .menu-item {
-    padding: 0px 29px 0px 29px;
+    margin-right: 58px;
 }
 
 .menu-item:last-child {
-    padding-right: 0px;
+    margin-right: 0px;
 }
 
 .menu-link {
-    display: flex;
-    height: 28px;
-    align-items: flex-end;
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     font-weight: 400;
@@ -61,7 +58,6 @@
     transition-timing-function: linear;
     color: #f38181;
     border-bottom: 3px solid #f38181;
-    align-items: flex-start;
 }
 
 
@@ -284,7 +280,6 @@
 .instagram {
     background-image: url(../img/foto/icon/instagram.png);
 }
-
 
 
 
