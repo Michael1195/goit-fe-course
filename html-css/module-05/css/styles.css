@@ -79,9 +79,9 @@
 
 
 .slide { 
+    display: block;
     width: 100%;
-    min-height: 100%;
-
+    height: auto;
 }
 
 .slider-bg {
@@ -102,6 +102,7 @@
 
 .slide-title {
     margin: auto;
+    margin-bottom: 42px;
     max-width: 754px;
     font-family: 'Roboto', sans-serif;
     font-size: 3.75rem;
@@ -320,6 +321,8 @@
     border: 1px solid transparent;
     border-left: 0px; 
 }
+
+
 
 
 /* FOOTER */
