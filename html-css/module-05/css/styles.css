@@ -103,7 +103,7 @@
 .slide-title {
     margin: auto;
     margin-bottom: 42px;
-    max-width: 754px;
+    width: 754px;
     font-family: 'Roboto', sans-serif;
     font-size: 3.75rem;
     font-weight: 900;
@@ -127,6 +127,7 @@
     background-image: url(../img/arrow2.png);
     background-repeat: no-repeat;
     background-position: center;
+    border: 0px;
 }
 
 .arrow2 {
@@ -140,6 +141,7 @@
     width: 104px;
     height: 104px;
     background-color: #1abc9c;
+    border: 0px;
 }
 
 .arrow1:hover, .arrow2:hover {
