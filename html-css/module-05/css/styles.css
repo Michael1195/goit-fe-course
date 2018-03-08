@@ -101,19 +101,19 @@
 }
 
 .slide-title {
-    margin: auto;
     margin-bottom: 42px;
-    width: 754px;
+    padding-left: 193px; 
     font-family: 'Roboto', sans-serif;
     font-size: 3.75rem;
-    font-weight: 900;
     text-transform: uppercase;
+    letter-spacing: 1.2px;
     color: #fff;
 }
 
 .categories {
     font-size: 24px;
     font-weight: 300;
+    margin-bottom: 0px;
 }
 
 
