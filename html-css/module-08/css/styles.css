@@ -1,0 +1,292 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.wrapper {
+    min-width: 20rem;
+    max-width: 90rem;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+/* PROMO */
+.promo {
+    margin: auto;
+    width: 20rem;
+    height: 33.75rem;
+    background-color: #1a1915;
+    background-image: url(../img/promo.png);
+    background-repeat: no-repeat;
+}
+
+/* logo-title */
+.logo-title {
+    text-align: center;
+    color: #fff;
+}
+
+
+/* logo-user */
+.logo-user {
+    padding: 1.25rem 0rem 1.687rem;
+}
+
+.logo {
+    font-size: 1.25rem;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    color: #fff;
+}
+
+.logo-sign {
+    margin-bottom: 7rem; 
+}
+
+.login {
+    display: inline-block;
+    margin-left: -4px;
+    padding: 0.5rem 1.062rem;
+    font-size: 0.875rem;
+    text-decoration: none;
+    border: solid 2px transparent;
+    color: #fff;
+}
+
+.login:active {
+    border: solid 2px #fff;
+    border-radius: 1.25rem; 
+}
+
+.title {
+    margin-bottom: 0.687rem;
+    font-size: 1.875rem;
+    text-transform: uppercase;
+}
+
+.p-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.125rem;
+    font-weight: 300;
+    width: 13.562rem;
+    margin: auto;
+    margin-bottom: 0.937rem;
+}
+
+.button1 {
+    padding: 0.875rem 2.812rem 0.75rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.875rem;
+    font-weight: 700;
+    background-color: #ff4e50;
+    border: 0px;
+    border-radius: 1.375rem;
+    color: #fff;
+}
+
+/* PARTNER */
+.partner {
+    width: 20rem;
+    margin: 0 auto;
+    padding: 4.375rem 0px 3.562rem;
+    text-align: center;
+}
+
+.title1 {
+    margin-bottom: 1.25rem;
+    font-size: 1.375rem;
+    color: #333;
+}
+
+.partner1 {
+    margin: auto;
+    width: 13.75rem;
+    margin-bottom: 1.875rem;
+}
+
+figcaption {
+    margin-bottom: 1rem;
+    font-size: 0.875rem;
+    color: #333;
+}
+
+.partner-p {  
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.875rem;
+    font-weight: 300;
+    color: #666;
+}
+
+
+.img2-icon {
+    position: relative;
+    width: 7.5rem;
+    height: 7.5rem;
+    margin: auto;
+    margin-bottom: 1.25rem;
+}
+
+.icon {
+    position: absolute;
+    bottom: -4px;
+    right: -4px;
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 4px solid #fff;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.icon1 {
+    background-image: url(../img/partner/icon/icon1.png);
+    background-color: #ff4e50;
+}
+
+.icon2 {
+    background-image: url(../img/partner/icon/icon2.png);
+    background-color: #ffa507;
+}
+
+.icon3 {
+    background-image: url(../img/partner/icon/icon3.png);
+    background-color: #1cd7ad;
+}
+
+.icon4 {
+    background-image: url(../img/partner/icon/icon4.png);
+    background-color: #4e73db;
+}
+
+.button2 {
+    padding: 0.812rem 5.437rem;
+    border: 2px solid #ff4e50;
+    border-radius: 1.5rem;
+    background-color: transparent;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: #ff4e50;
+}
+
+@media (min-width: 768px) {
+    
+    .promo {
+       width: 48rem;
+       height: 43.75rem;
+       background-image: url(../img/promo1.png);
+    } 
+
+    .logo-user {
+        display: flex;
+        justify-content: space-between;
+        padding: 2.375rem 3.125rem 1.562rem;
+    }
+
+    .logo-sign {
+        order: 1;
+    }
+
+    .logo {
+        margin-top: 0.437rem;
+    }
+
+    .title {
+        margin-bottom: 1.312rem;
+        font-size: 3.25rem;
+    }
+
+    .title-button {
+        width: 33.5rem;
+        margin: auto;
+    }
+
+    .p-title {
+        margin-bottom: 2.187rem;
+        font-size: 1.5rem;
+        width: 100%;
+    }
+
+    .button1 {
+        padding: 0.875rem 1.562rem 0.75rem;
+    }
+
+
+    /* PARTNER */
+    .partner {
+        width: 48rem;
+        padding: 4.562rem 0px 2.5rem;
+    }
+
+    .title1 {
+        margin-bottom: 2.25rem;
+        font-size: 1.375rem;
+    }
+
+    .partner-fg {
+        display: flex;
+        flex-wrap: wrap;
+        width: 33.5rem;
+        margin: auto;
+    }
+
+    .partner1 {
+        margin-bottom: 3.75rem;
+    }
+
+    .fg2 {
+        order: 3;
+        margin-bottom: 2.5rem;
+    }
+
+    .fg4 {
+        margin-top: 0px;
+        order: 4
+    } 
+
+    .button2 {
+        padding: 0.812rem 2.187rem;
+    
+    }
+
+}
+
+@media (min-width: 1440px) {
+
+    .promo {
+        width: 90rem;
+        background-image: url(../img/promo2.png);
+    }
+
+    .logo-user {
+        padding: 2.375rem 15.625rem 1.562rem;
+    }
+
+    .login:hover {
+        border: solid 2px #fff;
+        border-radius: 1.25rem; 
+    }
+
+
+    /* PARTNER */
+    .partner {
+        width: 90rem;
+        padding: 4.562rem 0px 4.562rem;
+    }
+
+    .partner-fg {
+        width: 60.875rem;
+        
+    }
+
+    .fg2 {
+        margin-bottom: 1.5rem;
+    }
+
+    .button2 {
+        margin-top: 1rem;
+    }
+}
+
