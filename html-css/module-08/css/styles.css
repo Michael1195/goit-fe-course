@@ -4,30 +4,25 @@
     padding: 0px;
 }
 
-.wrapper {
-    min-width: 20rem;
-    max-width: 90rem;
-    margin: 0 auto;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-}
 
 /* PROMO */
 .promo {
-    margin: auto;
-    width: 20rem;
-    height: 33.75rem;
+    min-height: 540px;    
     background-color: #1a1915;
     background-image: url(../img/promo.png);
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* logo-title */
 .logo-title {
+    max-width: 20rem;
+    margin: auto;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
     text-align: center;
     color: #fff;
 }
-
 
 /* logo-user */
 .logo-user {
@@ -60,6 +55,11 @@
     border-radius: 1.25rem; 
 }
 
+/* title-button */
+.title-button {
+    width: 20rem;
+}
+
 .title {
     margin-bottom: 0.687rem;
     font-size: 1.875rem;
@@ -86,12 +86,16 @@
     color: #fff;
 }
 
+
 /* PARTNER */
-.partner {
-    width: 20rem;
+.partner-tb {
+    min-width: 20rem;
+    max-width: 20rem;
     margin: 0 auto;
-    padding: 4.375rem 0px 3.562rem;
-    text-align: center;
+    padding: 4.375rem 0rem 3.562rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-align: center;  
 }
 
 .title1 {
@@ -171,18 +175,22 @@ figcaption {
     color: #ff4e50;
 }
 
-@media (min-width: 768px) {
+
+@media (min-width: 530px){
     
     .promo {
-       width: 48rem;
-       height: 43.75rem;
        background-image: url(../img/promo1.png);
     } 
+    
+    .logo-title {
+        min-width: 510px;
+        max-width: 670px;
+    }
 
     .logo-user {
         display: flex;
         justify-content: space-between;
-        padding: 2.375rem 3.125rem 1.562rem;
+        padding: 2.375rem 0.937rem 1.562rem;
     }
 
     .logo-sign {
@@ -193,14 +201,14 @@ figcaption {
         margin-top: 0.437rem;
     }
 
+    .title-button {
+        width: 510px;
+        margin: auto;
+    }
+
     .title {
         margin-bottom: 1.312rem;
         font-size: 3.25rem;
-    }
-
-    .title-button {
-        width: 33.5rem;
-        margin: auto;
     }
 
     .p-title {
@@ -215,21 +223,18 @@ figcaption {
 
 
     /* PARTNER */
-    .partner {
-        width: 48rem;
-        padding: 4.562rem 0px 2.5rem;
+    .partner-tb {
+        min-width: 510px;
+        max-width: 600px;
     }
 
     .title1 {
         margin-bottom: 2.25rem;
-        font-size: 1.375rem;
     }
 
     .partner-fg {
         display: flex;
         flex-wrap: wrap;
-        width: 33.5rem;
-        margin: auto;
     }
 
     .partner1 {
@@ -237,13 +242,13 @@ figcaption {
     }
 
     .fg2 {
-        order: 3;
+        order: 1;
         margin-bottom: 2.5rem;
     }
 
     .fg4 {
         margin-top: 0px;
-        order: 4
+        order: 1;
     } 
 
     .button2 {
@@ -253,15 +258,14 @@ figcaption {
 
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 970px) {
 
     .promo {
-        width: 90rem;
         background-image: url(../img/promo2.png);
     }
 
-    .logo-user {
-        padding: 2.375rem 15.625rem 1.562rem;
+    .logo-title {
+        width: 60.625rem;
     }
 
     .login:hover {
@@ -271,18 +275,18 @@ figcaption {
 
 
     /* PARTNER */
-    .partner {
-        width: 90rem;
+    .title1 {
+        margin-bottom: 36px;
+    }
+
+    .partner-tb {
+        min-width: 970px;
+        max-width: 1150px;
         padding: 4.562rem 0px 4.562rem;
     }
-
-    .partner-fg {
-        width: 60.875rem;
-        
-    }
-
+    
     .fg2 {
-        margin-bottom: 1.5rem;
+        margin-bottom: 24px;
     }
 
     .button2 {
