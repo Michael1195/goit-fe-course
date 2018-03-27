@@ -1,0 +1,254 @@
+
+.container-fluid {
+    height: 540px;
+    background-color: #1a1915;
+    background-image: url(../img/promo2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-align: center;
+}
+
+
+/* row1 */
+.pt-38-25 {
+    padding: 2.375rem 0rem 1.562rem;
+}
+
+.mb-7 {
+    margin-bottom: 7rem; 
+}
+
+.logo {
+    align-self: baseline;
+    margin-top: 0.437rem;
+    font-size: 20px;
+    color: #fff;
+}
+
+.logo:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+.login {
+    margin-left: -4px;
+    font-size: 14px;
+    border: 2px solid transparent;
+    padding: 0.5rem 1.062rem;
+    color: #fff;
+}
+
+.login:hover {
+    border: solid 2px #fff;
+    border-radius: 1.25rem; 
+    text-decoration: none;
+    color: #fff;
+}
+
+
+/* row2 */
+.title {
+    font-size: 3.25rem;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.mw-320 {
+    min-width: 320px;
+}
+
+.mb-21 {
+    margin-bottom: 1.312rem;
+}
+
+.p-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 1.3;
+    color: #fff;
+}
+
+.mb-35 {
+    margin-bottom: 2.187rem;
+}
+
+.button1 {
+    padding: 0.875rem 1.562rem 0.75rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.875rem;
+    font-weight: 700;
+    background-color: #ff4e50;
+    border: 0px;
+    border-radius: 1.375rem;
+    color: #fff;
+}
+
+/* PARTNER */
+.ptb {
+    padding: 4.562rem 0px 4.562rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-align: center;
+}
+
+.title1 {
+    font-size: 1.375rem;
+    color: #333;
+}
+
+.mb-36 {
+    margin-bottom: 2.25rem;
+}
+
+.mb-60-30 {
+    margin-bottom: 3.75rem;
+}
+
+.fg2 {
+    margin-bottom: 1.5rem;
+}
+
+figcaption {
+    margin-bottom: 1rem;
+    font-size: 0.875rem;
+    color: #333;
+}
+
+.partner-p {  
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.875rem;
+    font-weight: 300;
+    color: #666;
+}
+
+.img2-icon {
+    position: relative;
+    width: 7.5rem;
+    height: 7.5rem;
+    margin: auto;
+    margin-bottom: 1.25rem;
+}
+
+.icon {
+    position: absolute;
+    bottom: -4px;
+    right: -4px;
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 4px solid #fff;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.icon1 {
+    background-image: url(../img/partner/icon/icon1.png);
+    background-color: #ff4e50;
+}
+
+.icon2 {
+    background-image: url(../img/partner/icon/icon2.png);
+    background-color: #ffa507;
+}
+
+.icon3 {
+    background-image: url(../img/partner/icon/icon3.png);
+    background-color: #1cd7ad;
+}
+
+.icon4 {
+    background-image: url(../img/partner/icon/icon4.png);
+    background-color: #4e73db;
+}
+
+.button2 {
+    padding: 0.812rem 2.187rem;
+    border: 2px solid #ff4e50;
+    border-radius: 1.5rem;
+    background-color: transparent;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: #ff4e50;
+}
+
+.mb-16 {
+    margin-top: 1rem;
+}
+
+@media (max-width: 575px) {
+
+    .container-fluid {
+        background-image: url(../img/promo.png);     
+    }
+
+    /* PROMO */
+    .pt-38-25 {
+        padding: 1.25rem 0rem 1.687rem;
+    }
+
+    .logo {
+        margin-top: 0rem;
+    }
+
+    .title {
+        font-size: 1.875rem;
+    }
+
+    .mb-21 {
+        margin-bottom: 0.687rem;
+    }
+
+    .mb-35 {
+        margin-bottom: 0.937rem;
+    }
+
+    .p-title {
+        width: 13.562rem;
+        margin: auto;
+        font-size: 1.125rem;
+    }
+
+    .button1 {
+        padding: 0.875rem 2.812rem 0.75rem;
+    }
+   
+    /* PARTNER */
+    .mb-36 {
+        margin-bottom: 1.25rem;
+    }
+
+    .mb-60-30 {
+        margin-bottom: 1.875rem;
+    }
+    
+    .button2 {
+        padding: 0.812rem 5.437rem;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+
+    .container-fluid {
+        background-image: url(../img/promo1.png);
+    }
+
+    .fg2 {
+        margin-bottom: 2.5rem;
+    }
+}
+
+@media (max-width: 992px) {
+
+    .ptb {
+        padding: 4.375rem 0rem 3.562rem;
+    }
+
+    .mb-16 {
+        margin-top: 0rem;
+    }
+
+}
