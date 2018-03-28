@@ -7,7 +7,6 @@
     background-size: cover;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    text-align: center;
 }
 
 
@@ -50,20 +49,16 @@
 
 /* row2 */
 .title {
+    margin-bottom: 1.312rem;
+    min-width: 320px;
     font-size: 3.25rem;
     text-transform: uppercase;
     color: #fff;
 }
 
-.mw-320 {
-    min-width: 320px;
-}
-
-.mb-21 {
-    margin-bottom: 1.312rem;
-}
-
 .p-title {
+    margin-bottom: 2.187rem;
+    width: 100%;
     font-family: 'Roboto', sans-serif;
     font-size: 1.5rem;
     font-weight: 300;
@@ -71,9 +66,6 @@
     color: #fff;
 }
 
-.mb-35 {
-    margin-bottom: 2.187rem;
-}
 
 .button1 {
     padding: 0.875rem 1.562rem 0.75rem;
@@ -89,21 +81,15 @@
 /* PARTNER */
 .ptb {
     padding: 4.562rem 0px 4.562rem;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    text-align: center;
 }
 
 .title1 {
+    margin-bottom: 2.25rem;
     font-size: 1.375rem;
     color: #333;
 }
 
-.mb-36 {
-    margin-bottom: 2.25rem;
-}
-
-.mb-60-30 {
+.fg1, .fg2, .fg3, .fg4 {
     margin-bottom: 3.75rem;
 }
 
@@ -113,7 +99,10 @@
 
 figcaption {
     margin-bottom: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
     font-size: 0.875rem;
+    font-weight: 700;
     color: #333;
 }
 
@@ -166,6 +155,7 @@ figcaption {
 
 .button2 {
     padding: 0.812rem 2.187rem;
+    margin-top: 1rem;
     border: 2px solid #ff4e50;
     border-radius: 1.5rem;
     background-color: transparent;
@@ -173,10 +163,6 @@ figcaption {
     font-size: 0.875rem;
     font-weight: 700;
     color: #ff4e50;
-}
-
-.mb-16 {
-    margin-top: 1rem;
 }
 
 @media (max-width: 575px) {
@@ -195,20 +181,14 @@ figcaption {
     }
 
     .title {
-        font-size: 1.875rem;
-    }
-
-    .mb-21 {
         margin-bottom: 0.687rem;
-    }
-
-    .mb-35 {
-        margin-bottom: 0.937rem;
+        font-size: 1.875rem;
     }
 
     .p-title {
         width: 13.562rem;
         margin: auto;
+        margin-bottom: 0.937rem;
         font-size: 1.125rem;
     }
 
@@ -217,11 +197,11 @@ figcaption {
     }
    
     /* PARTNER */
-    .mb-36 {
+    .title1 {
         margin-bottom: 1.25rem;
     }
 
-    .mb-60-30 {
+    .fg1, .fg2, .fg3, .fg4 {
         margin-bottom: 1.875rem;
     }
     
@@ -247,7 +227,7 @@ figcaption {
         padding: 4.375rem 0rem 3.562rem;
     }
 
-    .mb-16 {
+    .button2 {
         margin-top: 0rem;
     }
 
