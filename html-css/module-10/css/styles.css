@@ -4,10 +4,10 @@
     height: 1000px;
     padding-top: 1.187rem;
     background-color: #fce38a;
-    background: -webkit-gradient(  linear, left top, left bottom, from(rgba(243, 129, 129, 0.9)), to(rgba(252, 227, 138, 0.9))), url('../img/layer1-min.png') no-repeat;
-    background: -webkit-linear-gradient(  rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9)), url('../img/layer1-min.png') no-repeat;
-    background: -o-linear-gradient(  rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9)), url('../img/layer1-min.png') no-repeat;
-    background: linear-gradient(  rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9)), url('../img/layer1-min.png') no-repeat;
+    background: -webkit-gradient(  linear, left top, left bottom, from(rgba(243, 129, 129, 0.9)), to(rgba(252, 227, 138, 0.9))), url('../img/layer1-min.png') no-repeat center;
+    background: -webkit-linear-gradient(  rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9)), url('../img/layer1-min.png') no-repeat center;
+    background: -o-linear-gradient(  rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9)), url('../img/layer1-min.png') no-repeat center;
+    background: linear-gradient(  rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9)), url('../img/layer1-min.png') no-repeat center;
     background-size: cover;
     text-align: center; 
 }
@@ -15,7 +15,7 @@
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi) {
 
     .header {
-        background: url('../img/layer2-min.png') no-repeat;
+        background: url('../img/layer2-min.png') no-repeat center;
     }
 }
 
@@ -84,8 +84,7 @@
 
 /* SECTION1 */
 .service {
-    padding: 2.812rem 0rem 0rem 0rem;
-    
+    padding: 2.812rem 0rem 0rem 0rem;   
 }
 
 .service__col--mb-100 {
@@ -138,8 +137,8 @@
     color: #999;
 }
 
-/* SECTION2 */
 
+/* SECTION2 */
 
 .team__title {
     margin-bottom: 3.125rem;
@@ -208,13 +207,10 @@
 }
 
 .socials {
-    display: block;
-    width: 224px;
-    height: 56px;
     position: absolute;
     top: 50%;
     left: 50%;
-    background-color: #fce38a;
+    width: 228px;
     -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
@@ -224,11 +220,12 @@
     display: block;
     width: 56px;
     height: 56px;
-    border-right: 1px solid #f9bd87;
+    margin-right: 1px;
+    background-color: #fce38a;
 }
 
 .socials__link:last-child {
-    border-right: none;
+    margin-right: 0px;
 }
 
 .socials__link--hover:hover {
@@ -239,11 +236,12 @@
     fill: #fff;
 }
 
-.socials__icon{
+.socials__icon {
     width: 26px;
     height: 26px;
     fill: #f38181; 
 }
+
 
 /*  FOOTER */
 
@@ -307,10 +305,10 @@
     .header {
         height: 625px;
         padding-top: 1.875rem;
-        background: -webkit-gradient(  linear, left top, left bottom, from(rgba(243, 129, 129, 0.9)), to(rgba(252, 227, 138, 0.9))), url('../img/layer3-min.png') no-repeat;
-        background: -webkit-linear-gradient(  rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9)), url('../img/layer3-min.png') no-repeat;
-        background: -o-linear-gradient(  rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9)), url('../img/layer3-min.png') no-repeat;
-        background: linear-gradient(  rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9)), url('../img/layer3-min.png') no-repeat;
+        background: -webkit-gradient(  linear, left top, left bottom, from(rgba(243, 129, 129, 0.9)), to(rgba(252, 227, 138, 0.9))), url('../img/layer3-min.png') no-repeat  center;
+        background: -webkit-linear-gradient(  rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9)), url('../img/layer3-min.png') no-repeat  center;
+        background: -o-linear-gradient(  rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9)), url('../img/layer3-min.png') no-repeat  center;
+        background: linear-gradient(  rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9)), url('../img/layer3-min.png') no-repeat  center;
         background-size: cover;    
     }
 
@@ -332,10 +330,10 @@
 @media only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 768px), (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi) {
 
     .header{
-        background: -webkit-gradient(  linear, left top, left bottom, from(rgba(243, 129, 129, 0.9)), to(rgba(252, 227, 138, 0.9))), url('../img/layer4-min.png') no-repeat;
-        background: -webkit-linear-gradient(  rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9)), url('../img/layer4-min.png') no-repeat;
-        background: -o-linear-gradient(  rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9)), url('../img/layer4-min.png') no-repeat;
-        background: linear-gradient(  rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9)), url('../img/layer4-min.png') no-repeat;
+        background: -webkit-gradient(  linear, left top, left bottom, from(rgba(243, 129, 129, 0.9)), to(rgba(252, 227, 138, 0.9))), url('../img/layer4-min.png') no-repeat center;
+        background: -webkit-linear-gradient(  rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9)), url('../img/layer4-min.png') no-repeat center;
+        background: -o-linear-gradient(  rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9)), url('../img/layer4-min.png') no-repeat center;
+        background: linear-gradient(  rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9)), url('../img/layer4-min.png') no-repeat center;
         background-size: cover;
     }
 }
