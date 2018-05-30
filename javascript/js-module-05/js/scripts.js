@@ -45,7 +45,7 @@ function SocialBook(users = [], posts = {}) {
   this.users = users;
   this.posts = posts;
 
-  this.getAllUsers = () => this.users.map(use => use);
+  this.getAllUsers = () => this.users;
   this.getUserByLogin = login => this.users.find(use => use.login === login);
   this.getUserStatus = function(userId) {
     let user = this.users.find(use => use.id === userId);
@@ -67,7 +67,8 @@ function SocialBook(users = [], posts = {}) {
     this.users.push(user);
   };
 
-  this.removeUserById = userId => this.users.forEach((use, idx) => (use.id === userId ? this.users.splice(idx, 1) : use));
+  this.removeUserById = userId =>
+    (this.users = this.users.filter(use => use.id !== userId));
 
   this.getUsersCount = () => this.users.length;
 
@@ -82,14 +83,21 @@ function SocialBook(users = [], posts = {}) {
 
   this.addPost = (userId, post) => this.posts[userId].push(post);
 
-  this.removePost = (userId, postId) => this.posts[userId].forEach((post, idx) => post.id === postId ? this.posts[userId].splice(idx, 1) : post);
+  this.removePost = (userId, postId) =>
+    (this.posts[userId] = this.posts[userId].filter(
+      post => post.id !== postId
+    ));
 
   this.getUserPosts = userId => this.posts[userId];
 
-  this.addPostLike = (userId, postId) => this.posts[userId].forEach(post => (post.id === postId ? (post.likes += 1) : post));
+  this.addPostLike = (userId, postId) =>
+    this.posts[userId].find(
+      post => (post.id === postId ? (post.likes += 1) : post)
+    );
 
-  this.getAllLikes = userId => this.posts[userId].reduce((acc, post) => acc + post.likes, 0);
- 
+  this.getAllLikes = userId =>
+    this.posts[userId].reduce((acc, post) => acc + post.likes, 0);
+
   this.getPostsCount = userId => this.posts[userId].length;
 
   this.addPost("-s19a6hqce", post);
