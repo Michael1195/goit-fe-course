@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+.fullview {
+    margin: 15px; 
+}
+
+.img-fullview {
+    display: block; 
+    width: 100%;
+    height: auto;
+    padding: 7px;
+    box-shadow: 0 0 0.5em #333;   
+}
+
+.preview {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 15px;
+    padding: 7px;
+    box-shadow: 0 0 0.5em #333;
+}
+
+.preview li {
+    margin: 10px;
+}
+
+.preview-active {
+    box-shadow: 0 0 0.8em #408;
+}
+
+
