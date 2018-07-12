@@ -124,7 +124,6 @@ class Stopwatch {
   }
 
   addTimerUl(btnLap, ulLaps) {
-    ulLaps.hidden = true;
     btnLap.classList.add("active");
     setTimeout(() => {
       btnLap.classList.remove("active");
