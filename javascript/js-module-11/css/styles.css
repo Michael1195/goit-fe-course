@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body {
+  padding-top: 20px;
+  display: flex;
+}
+
+.form {
+  min-width: 125px;
+  margin-left: 50px;
+}
+
+.form > section {
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #cac8c8;
+}
+
+.form > section:last-of-type {
+  border-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+h2 {
+  margin-bottom: 6px;
+  font-size: 20px;
+  font-weight: 300;
+  color: rgb(175, 68, 68);
+}
+
+.laptops {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 50px;
+}
+
+.laptops > li {
+  margin: 0 50px 50px 0;
+  color: #333;
+}
+
+button[type="reset"] {
+  padding: 10px 25px;
+  background-color: rgb(175, 68, 68);
+  font-size: 15px;
+  color: #fff;
+  border: 0px;
+  box-shadow: 0px 3px 8px rgba(109, 55, 11, 0.5);
+  border-radius: 3px;
+}
+
+button[type="reset"]:hover {
+  background-color: rgba(175, 68, 68, 0.9);
+  cursor: pointer;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+label {
+  color: #333;
+  cursor: pointer;
+  font-weight: normal;
+  line-height: 40px;
+  padding: 10px 0;
+  vertical-align: middle;
+}
+
+label:hover {
+  color: rgb(175, 68, 68);
+}
+
+label:before {
+  content: " ";
+  display: inline-block;
+  font: 20px/30px Arial;
+  margin-right: 15px;
+  position: relative;
+  text-align: center;
+  text-indent: 0px;
+  width: 28px;
+  height: 28px;
+  background: #fff;
+  border: 1px solid #cac8c8;
+  border-image: initial;
+  vertical-align: middle;
+  box-shadow: inset 4px 4px 5px rgba(172, 188, 205, 0.3);
+  border-radius: 3px;
+}
+
+label:hover:before {
+  border: 1px solid rgb(175, 68, 68);
+}
+
+input:checked + label:before {
+  content: "\2714";
+  background: rgb(175, 68, 68);
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+
