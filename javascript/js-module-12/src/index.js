@@ -93,7 +93,7 @@ function handleForm(evt) {
 }
 
 function handleRequest() {
-  apiBookmarks(substUrl).then(data => {
+  apiBookmarks(input.value).then(data => {
     spinner();
     if (data === undefined) {
       createListBookmarks();
