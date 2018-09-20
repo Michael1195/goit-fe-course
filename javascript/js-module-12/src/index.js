@@ -89,10 +89,14 @@ function handleForm(evt) {
 
   resetBookmarks();
   handleRequest();
+  console.log("input", input.value);
   form.reset();
+  // console.log("input", input.value);
+  console.log("substUrl: ", substUrl);
 }
 
 function handleRequest() {
+  
   apiBookmarks(input.value).then(data => {
     spinner();
     if (data === undefined) {
@@ -101,6 +105,7 @@ function handleRequest() {
     }
 
     substUrl = data.url;
+    console.log("data: ", substUrl);
     substUrl = pattern.exec(substUrl);
     substUrl = substUrl[0];
     testUrl(substUrl);
