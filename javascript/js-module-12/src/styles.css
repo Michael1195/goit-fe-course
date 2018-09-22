@@ -23,6 +23,14 @@ body {
   color: rgb(141, 141, 141);
 }
 
+.input:valid {
+  border: 1px solid green;
+}
+
+.input:invalid {
+  border: 1px solid red;
+}
+
 .button {
   background-color: rgb(98, 141, 201);
   padding: 10px 28px;
@@ -69,12 +77,12 @@ body {
 }
 
 .remove:hover {
+  cursor: pointer;
   background-color: rgba(0, 0, 0, 0.3);
 }
 
 .item:hover > .remove {
   display: block;
-  cursor: pointer;
 }
 
 .link {
@@ -93,7 +101,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(128, 128, 128, 0.1);
+  background-color: rgba(128, 128, 128, 0.2);
 }
 
 .spinners.visible {

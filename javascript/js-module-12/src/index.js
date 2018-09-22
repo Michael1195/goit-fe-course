@@ -8,30 +8,12 @@ const form = document.querySelector(".form");
 const input = form.querySelector(".input");
 const container = document.querySelector("#cards");
 const spinners = document.querySelector(".spinners");
-let valid;
-let valid1;
-let idx;
-let substUrl;
-const pattern = /^(http(s)?:\/\/)?(www\.)?[a-z0-9-]{2,63}\.[a-z0-9&=~?#_\/\.-]+[^_\W$]/i;
-const pattern1 = /^[-]|[-]\.|\.[-]|(\/|\.|\?|&|=|#){2,}|[{}""''^|\[\]`\\*;@$,+%]|[|\.|\?|&|=|#]$/g;
-
-const patternHttps = /^https:\/\//;
-const patternHttp = /^http:\/\//;
-const patternWww = /^www\./;
-const patternHttpsWww = /^https:\/\/www\./;
-const patternHttpWww = /^http:\/\/www\./;
-
-let resultHsW;
-let resultHW;
-let resultHttps;
-let resultHttp;
-let resultWww;
 
 let arrUrl = LOCALSTORAGE.get("arr-url");
 if (arrUrl === null) arrUrl = [];
 
 let arrBookmarks = LOCALSTORAGE.get("arr-bookmarks");
-arrBookmarks !== null ? createListBookmarks() : (arrBookmarks = []);
+arrBookmarks === null ? (arrBookmarks = []) : createListBookmarks();
 
 container.addEventListener("click", handleCards);
 
@@ -45,68 +27,41 @@ function handleCards(evt) {
   createListBookmarks();
 }
 
-form.addEventListener("click", handleForm);
+form.addEventListener("submit", handleForm);
 
 function handleForm(evt) {
   evt.preventDefault();
-  if (evt.target.type !== "submit") return;
   spinner();
-  substUrl = input.value;
-  substUrl = substUrl.substr(0).toLowerCase();
+  let { value } = input;
 
-  valid = pattern.test(substUrl);
-  if (!valid) {
-    spinner();
-    alert("Невалидный url!");
-    return;
-  }
-
-  testUrl(substUrl);
-  handleTestUrl(substUrl);
-
-  valid1 = substUrl.match(pattern1);
-  if (valid1 !== null) {
-    spinner();
-    alert("Невалидный url!");
-    return;
-  }
-
-  substUrl = pattern.exec(substUrl);
-
-  if (substUrl === null) {
-    spinner();
-    alert("Невалидный url!");
-    return;
-  }
-
-  substUrl = substUrl[0];
-
-  if (arrUrl.includes(substUrl)) {
-    spinner();
-    alert("Закладка вже є!");
-    return;
-  }
-
+  value = value.substr(0).toLowerCase();
   resetBookmarks();
-  handleRequest();
+  handleRequest(value);
   form.reset();
 }
 
-function handleRequest() {
-  apiBookmarks(substUrl).then(data => {
-    spinner();
+function handleRequest(value) {
+  apiBookmarks(value).then(data => {
     if (data === undefined) {
+      spinner();
       createListBookmarks();
       return;
     }
 
-    substUrl = data.url;
-    substUrl = pattern.exec(substUrl);
-    substUrl = substUrl[0];
-    testUrl(substUrl);
-    handleTestUrl(substUrl);
+    if (arrUrl.includes(data.url)) {
+      spinner();
+      alert("Закладка вже є!");
+      createListBookmarks();
+      return;
+    }
+
+    if (data.image === "") {
+      data.image = "https://placehold.it/350x125/8FBC8F/ffffff/";
+    }
+
+    spinner();
     arrBookmarks.push(data);
-    arrUrl.push(substUrl);
+    arrUrl.push(data.url);
     setLocalstorage("arr-bookmarks", arrBookmarks);
     setLocalstorage("arr-url", arrUrl);
     createListBookmarks();
@@ -130,60 +85,9 @@ function setLocalstorage(key, value) {
 }
 
 function resetBookmarks() {
-    container.innerHTML = "";
-  }
+  container.innerHTML = "";
+}
 
 function spinner() {
   spinners.classList.toggle("visible");
-}
-
-function testUrl(url) {
-  resultHsW = patternHttpsWww.test(url);
-  resultHW = patternHttpWww.test(url);
-  resultHttps = patternHttps.test(url);
-  resultHttp = patternHttp.test(url);
-  resultWww = patternWww.test(url);
-}
-
-function handleTestUrl(url) {
-  if (resultHsW) {
-    handleHttpsWww(url);
-  } else if (resultHW) {
-    handleHttpWww(url);
-  } else if (resultHttps) {
-    handleHttps(url);
-  } else if (resultHttp) {
-    handleHttp(url);
-  } else if (resultWww) {
-    handleWww(url);
-  }
-}
-
-function handleHttpsWww(url) {
-  idx = url.search(/[^https:\/\/www\.]/);
-  sub(url);
-}
-
-function handleHttpWww(url) {
-  idx = url.search(/[^http:\/\/www\.]/);
-  sub(url);
-}
-
-function handleHttps(url) {
-  idx = url.search(/[^https:\/\/]/);
-  sub(url);
-}
-
-function handleHttp(url) {
-  idx = url.search(/[^http:\/\/]/);
-  sub(url);
-}
-
-function handleWww(url) {
-  idx = url.search(/[^www\.]/);
-  sub(url);
-}
-
-function sub(url) {
-  substUrl = url.substr(idx);
 }
