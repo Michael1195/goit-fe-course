@@ -1,0 +1,10 @@
+<li class="item">
+    {{#each this}}
+    <button id="{{idx}}" class="remove">&#215;</button>
+    <a class="link" href="{{url}}" target="_blank">
+        <img class="img" src="{{image}}" alt="Preview Img">
+        <h3>{{title}}</h3>
+        <p>{{description}}</p>
+    </a>
+    {{/each}}
+</li>
